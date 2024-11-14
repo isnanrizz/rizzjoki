@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  font-weight: 300;
+  padding: 0.5rem 1rem;
+}
+
+/* Hero Section */
+/* Hero Section Styling */
+.hero-section {
+  position: relative;
+  height: 100vh; /* Make the section take the full height of the viewport */
+  overflow: hidden; /* Ensure the image doesn't overflow the container */
+}
+
+.full-image {
+  width: 100%;      /* Ensure the image takes up the full width */
+  height: 90%;     /* Make the image take up the full height of the container */
+  object-fit: cover; /* Ensure the image covers the entire area without distortion */
+  position: static; /* Position the image absolutely inside the section */
+  top: 0;
+  left: 0;
+}
+
+.hero-text {
+  position: absolute;      /* Position the text on top of the image */
+  top: 75%;                /* Center vertically */
+  left: 50%;               /* Center horizontally */
+  transform: translate(-50%, -50%); /* Use translate to perfectly center the text */
+  text-align: center;      /* Center the text */
+  color: white;            /* Set the text color to white (or any contrast color) */
+  z-index: 50;             /* Ensure the text appears above the image */
+  padding: 20px;           /* Add padding for better readability */
+}
+
+.hero-text h1 {
+  font-size: 3rem;         /* Adjust the font size of the heading */
+  margin-bottom: 20px;     /* Add margin between the heading and the paragraph */
+}
+
+.hero-text p {
+  font-size: 1.5rem;       /* Adjust the font size of the paragraph */
+}
+
+
+/* About Section Styling */
+#about {
+  /* Use Flexbox layout */
+  justify-content: center;
+  /* Horizontally center the content */
+  align-items: center;
+  /* Vertically center the content */
+  height: 400px;
+  /* Set a height for the section (adjust as needed) */
+  text-align: center;
+  /* Center the text */
+  padding: 20px;
+  /* Add padding around the content */
+  background-color: #f7f7f7;
+  /* Optional: add a background color */
+}
+
+#about p {
+  font-size: 18px;
+  /* Adjust font size */
+  line-height: 1.6;
+  /* Line height for better readability */
+  max-width: 800px;
+  /* Limit the width of the paragraph */
+  margin: 50px auto;
+  /* Center the paragraph */
+}
+
+.center {
+  text-align: center;
+}
+
+/* Products Section */
+/* Products Section */
+.products-section {
+  padding: 60px 0;
+
+}
+
+.products-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Ensure the parent container is a flex container */
+.content-img {
+  display: flex;                      /* Use flexbox for horizontal alignment */
+  justify-content: center;            /* Center the children horizontally */
+  align-items: center;                /* Align items vertically (optional) */
+  flex-wrap: wrap;                    /* Allow items to wrap on smaller screens */
+  gap: 30px;                          /* Add space between product cards */
+  padding: 20px;                      /* Optional: Add padding around the container */
+}
+
+/* Adjust styling for each product card */
+.product-card {
+  background-color: #fff;             /* Background color for each product card */
+  border: 1px solid #ddd;             /* Border around the product card */
+  border-radius: 8px;                 /* Rounded corners for product card */
+  padding: 15px;                      /* Padding inside the product card */
+  text-align: center;                 /* Center the text inside the product card */
+  width: 300px;                       /* Fixed width for each product card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visual effect */
+}
+
+.product-card img {
+  max-width: 100%;                    /* Ensure the image is responsive */
+  height: auto;                       /* Maintain aspect ratio */
+  border-radius: 8px;                 /* Optional: Round the image corners */
+  margin-bottom: 15px;                 /* Space between image and text */
+}
+
+.product-card h3 {
+  font-size: 20px;                    /* Font size for the product title */
+  margin-bottom: 10px;                 /* Space below the title */
+}
+
+.product-card button {
+  background-color: #007bff;          /* Blue background for the button */
+  color: white;                       /* White text color for the button */
+  border: none;                       /* Remove border */
+  padding: 10px 20px;                  /* Padding inside the button */
+  border-radius: 5px;                 /* Rounded button corners */
+  cursor: pointer;                    /* Pointer cursor on hover */
+  transition: background-color 0.3s;  /* Smooth transition on hover */
+}
+
+.product-card button:hover {
+  background-color: #0056b3;          /* Darken the button color on hover */
+}
+
+
+.content-img {
+  align-items: center;
+}
+
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.footer-logo {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.footer h4 {
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-section img {
+    margin-top: 30px;
+  }
+}
